@@ -16,12 +16,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "eslint src/*.js --fix-dry-run"
-    ]
-  },
+  "lint": "eslint src/**/**/*.js --fix-dry-run git diff --diff-filter=d --cached --name-only | grep -E './**/*.(js|jsx|ts|tsx|css|scss|md)$'",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
