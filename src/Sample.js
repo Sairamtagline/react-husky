@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Sample = () => {
     return (
-         <div>
+        <div>
             Sample 
          </div>
     )
