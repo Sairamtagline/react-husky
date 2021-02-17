@@ -13,7 +13,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint"
     }
   },
   "lint": "eslint src/**/**/*.js --fix-dry-run git diff --diff-filter=d --cached --name-only | grep -E './**/*.(js|jsx|ts|tsx|css|scss|md)$'",
